@@ -1,0 +1,410 @@
+/* Global styles */
+.App {
+  text-align: center;
+}
+
+/* Logo animation */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Header styles */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Link styles */
+.App-link {
+  color: #61dafb;
+}
+
+/* Logo animation keyframes */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button,
+h2 {
+  text-align: center;
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Form styles */
+.form-account {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.container-form-account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Link styles */
+.link {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Registration form styles */
+.registration-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 400px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.registration-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Center align container */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust the height as needed */
+}
+
+/* Navbar styles */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar-brand a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu li {
+  margin-left: 1rem;
+}
+
+.navbar-menu li:first-child {
+  margin-left: 0;
+}
+
+.navbar-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-menu button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.option-button {
+  position: relative; /* Position the dropdown relative to this button */
+  /* other styles for the button */
+}
+
+
+.navbar-menu button:hover {
+  text-decoration: underline;
+}
+
+.dropdown-menu {
+  display: none; /* Initially hidden */
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.option-button.active + .dropdown-menu {
+   display: block;
+ }
+
+.dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  top: 20px; /* Adjust as per your navbar height */
+  right: 0;
+}
+
+.dropdown-content a, .dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Song item styles */
+.song-item {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.song-info {
+  display: flex;
+  align-items: center;
+}
+
+.image-container-ListSong {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.image-container-ListAlbum {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.song-details {
+  flex: 1;
+}
+.audio-player {
+  max-width: 800px; /* Set maximum width for the soundtrack bar */
+  margin-right: 10px; /* Add margin if needed */
+}
+.option-button {
+  position: relative; /* Position the dropdown relative to this button */
+  /* other styles for the button */
+}
+/* Edit song page styles */
+.edit-song-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.edit-song-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 20px;
+}
+
+/* Song panel styles */
+.song-panel {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background: #fff;
+}
+
+.song-panel:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Image and soundtrack preview styles */
+.image-preview,
+.soundtrack-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+audio {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.input-file {
+  margin-top: 15px;
+}
+
+/* Form actions styles */
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+/* Button styles */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.save-changes {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.save-changes:hover {
+  background-color: #45a049;
+}
+
+.delete-song {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-song:hover {
+  background-color: #da190b;
+}
+
+/* Edit song container styles */
+.edit-song-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Edit song form field styles */
+.edit-song-form .form-field {
+  margin-bottom: 15px;
+}
+
+.edit-song-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.edit-song-form input[type="text"],
+.edit-song-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Preview image styles */
+.preview-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Audio preview styles */
+.audio-preview {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* Save button styles */
+.save-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}

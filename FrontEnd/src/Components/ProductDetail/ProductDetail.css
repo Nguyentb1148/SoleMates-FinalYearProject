@@ -1,0 +1,10 @@
+.slide-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.slide-transition {
+    transition: transform 0.3s ease-in-out;
+}
+

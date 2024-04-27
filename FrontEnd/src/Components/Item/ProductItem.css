@@ -1,0 +1,37 @@
+.cart-item {
+    margin: 3px;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.product-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-name {
+    font-weight: bold;
+    color: black; /* Adjust color as needed */
+    text-decoration: none; /* Remove underline from link */
+    margin-top: 10px;
+}
+
+.product-price {
+    font-weight: bold;
+    margin-top: 5px;
+    color:darkred;
+}
